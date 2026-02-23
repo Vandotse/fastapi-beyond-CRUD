@@ -11,7 +11,8 @@ For more details, visit the project's [website](https://jod35.github.io/fastapi-
 3. [Project Setup](#project-setup)
 4. [Running the Application](#running-the-application)
 5. [Running Tests](#running-tests)
-6. [Contributing](#contributing)
+6. [Changes](#changes)
+7. [Contributing](#contributing)
 
 ## Getting Started
 Follow the instructions below to set up and run your FastAPI project.
@@ -75,6 +76,9 @@ Run the tests using this command
 ```bash
 pytest
 ```
+
+## Changes
+- **Docker**: Switched the Dockerfile CMD from `fastapi run` to `uvicorn src:app` so the app runs correctly in the container (the `fastapi` CLI was not available in the image).
 
 ## Contributing
 I welcome contributions to improve the documentation! You can contribute [here](https://github.com/jod35/fastapi-beyond-crud-docs).
